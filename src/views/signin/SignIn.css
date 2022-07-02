@@ -1,0 +1,91 @@
+.signIn {
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    height: 100vh;
+    background: var(--darkBlack);
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    overflow: hidden;
+}
+::-webkit-scrollbar{
+display: none;
+}
+
+.signIn__left {
+    background: var(--lightBlack);
+}
+
+.signIn__left--topHeadings {
+    height: 10vh;
+    padding: 40px 80px;
+}
+
+.signIn__left--topHeadings h1 {
+    font-family: "Monoton", cursive;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.signIn__left--topHeadings h5 {
+    font-size: 30px;
+    font-family: "Sacramento", cursive;
+}
+
+.signIn__left--imgWrapper {
+    width: 100%;
+    height: 80vh;
+    margin-top: 50px;
+}
+
+.signIn__left--imgWrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.signIn__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 60px;
+}
+
+.signIn__right h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-family: "Sacramento", cursive;
+}
+
+.signIn__form {
+    width: 90%;
+}
+
+.button__lightGreen {
+    background: var(--lightGreen);
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.button__lightGreen:hover {
+    box-shadow: 0px 10px 30px #504e4e6c;
+}
+
+@media (max-width: 900px) {
+    .signIn {
+        grid-template-columns: 1fr;
+    }
+
+    .signIn__left {
+        display: none;
+    }
+
+    .signIn__form {
+        width: 100%;
+    }
+
+}

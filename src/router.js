@@ -1,43 +1,20 @@
 import { createWebHistory, createRouter } from "vue-router";
-const routes =  [
+const routes = [
   {
     path: "/",
-    alias: "/tutorials",
-    name: "tutorials",
-    component: () => import("./views/TutorialsList.vue")
+    alias: "/surveys",
+    name: "surveys",
+    component: () => import("./views/surveysList/SurveysList.vue")
   },
   {
-    path: "/edit/:id",
-    name: "edit",
-    component: () => import("./views/EditTutorial.vue"),
-    props: true
-  },
-  {
-    path: "/add",
-    name: "add",
-    component: () => import("./views/AddTutorial.vue")
-  },
-  {
-    path: "/view",
-    name: "view",
-    component: () => import("./views/ViewTutorial.vue"),
-    props: true
-  },
-  {
-    path: "/addLesson",
-    name: "addLesson",
-    component: () => import("./views/AddLesson.vue"),
-    props: true
-  },
-  {
-    path: "/editLesson",
-    name: "editLesson",
-    component: () => import("./views/EditLesson.vue"),
+    path: "/signin",
+    name: "signIn",
+    component: () => import("./views/signin/SignIn.vue"),
     props: true
   }
 ];
 const router = createRouter({
-  base: process.env.NODE_ENV === 'development' ? '/' : '/tutorial-frontend-1/',
+  base: process.env.NODE_ENV === 'development' ? '/' : '/survey-frontend-user/',
   history: createWebHistory(process.env.BASE_URL),
   routes,
 });

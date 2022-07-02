@@ -1,0 +1,75 @@
+  /* HEADER */
+  .header {
+    height: 70px;
+    background: var(--lightBlack);
+    color: var(--white);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--fadedGrey);
+    z-index: 1000;
+  }
+  
+  .header__logo {
+    font-family: "Monoton", cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .button__white--bordered {
+    border: 1px solid var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+  }
+  
+  .button__white--bordered:hover {
+    background: var(--white);
+    color: var(--darkBlack);
+    box-shadow: 0px 10px 30px #96919185;
+  }
+  
+  .header__right--link {
+    margin: 0 20px;
+    color: var(--white);
+    text-decoration: none;
+  }
+  
+  .header__right--link:hover {
+    color: var(--blue);
+  }
+  
+  /* REGISTER */
+  .createUser {
+    display: grid;
+    place-items: center;
+    height: 100%;
+    background: var(--darkBlack);
+    font-family: "Poppins", sans-serif;
+    color: var(--white);
+    padding: 0 20px;
+  }
+  
+  .createUser__wrapper {
+    width: 50%;
+  }
+  
+  .createUser__topHeadings {
+    border-bottom: 1px solid var(--fadedGrey);
+    margin: 20px 0;
+  }
+  
+  .primary__heading {
+    font-family: "Poppins", cursive;
+    font-size: 30px;
+    font-weight: 400;
+  }
+  
