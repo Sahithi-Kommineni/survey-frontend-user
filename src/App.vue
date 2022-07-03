@@ -16,8 +16,8 @@ export default {
     currentPath: "",
   }),
   created() {
-     const isAuthenticated = sessionStorage.getItem("authenticated");
-    if (isAuthenticated === "true") {
+     const isAuthenticated = sessionStorage.getItem("token");
+    if (isAuthenticated) {
       this.$router.push({ name: "surveys" });
     } else {
       this.$router.push({ name: "signIn" });
