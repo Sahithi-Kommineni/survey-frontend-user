@@ -69,6 +69,7 @@ export default {
             localStorage.setItem("userName", response.data.username);
             localStorage.setItem("role", response.data.role);
             localStorage.setItem("email", response.data.email);
+            localStorage.setItem("userId", response.data.id);
             this.$router.push({ name: "surveys" });
           }
         })

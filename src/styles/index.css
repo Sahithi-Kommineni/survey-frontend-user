@@ -42,3 +42,12 @@ body {
     font-family: "Sacramento", cursive;
     padding: 5px 0;
 }
+
+.operations__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.icon{
+    cursor: pointer;
+}
