@@ -16,7 +16,7 @@ export default {
     currentPath: "",
   }),
   created() {
-     const isAuthenticated = sessionStorage.getItem("token");
+     const isAuthenticated = localStorage.getItem("token");
     if (isAuthenticated) {
       this.$router.push({ name: "surveys" });
     } else {
