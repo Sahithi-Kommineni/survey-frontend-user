@@ -8,7 +8,6 @@
       <thead>
         <tr>
           <th>Survey Name</th>
-          <th>Created By</th>
           <th>Description</th>
           <th>Operations</th>
         </tr>
@@ -16,7 +15,6 @@
       <tbody v-for="survey in surveys">
         <tr>
           <td data-column="Survey Name">{{ survey.title }}</td>
-          <td data-column="Created By">{{ survey.createdBy }}</td>
           <td data-column="Description">{{ survey.description }}</td>
           <td data-column="Operations">
             <span class="operations__wrapper">
