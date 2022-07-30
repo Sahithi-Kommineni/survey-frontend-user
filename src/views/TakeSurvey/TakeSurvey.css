@@ -1,0 +1,123 @@
+.create__survey {
+  padding: 5px 20px 0 20px;
+  background-color: var(--darkBlack);
+  min-height: 100vh;
+  max-height: auto;
+}
+
+.createSurvey__form {
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  height: 77vh;
+}
+
+.createSurvey__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+  background: var(--darkBlack);
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+}
+
+.createSurvey__right {
+  padding: 0 20px;
+  color: var(--white);
+  border-left: 1px solid var(--fadedGrey);
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: scroll;
+}
+
+.createSurvey__right h3 {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #696a6985;
+  padding: 5px 0;
+  background: var(--lightBlack);
+  z-index: 100;
+}
+
+.survey__questions--wrapper {
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+
+.survey__question {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--lightGreen);
+  margin: 15px 0;
+  padding: 10px 10px 0px 10px;
+  box-shadow: 0px 10px 30px #2a2a2a6c;
+  border-radius: 5px;
+}
+
+.survey__question--heading {
+  border-bottom: 1px solid var(--lightGreen);
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.createSurvey__left .v-input .v-input,
+.createSurvey__left .v-input--horizontal {
+  flex: none !important;
+}
+
+.button__lightGreen {
+  background: var(--lightGreen);
+  width: 40%;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.button__lightGreen:hover {
+  box-shadow: 0px 10px 30px #504e4e6c;
+}
+
+@media (max-width: 900px) {
+  .create__survey {
+    padding: 5px;
+  }
+
+  .createSurvey__form {
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+  }
+
+  .createSurvey__left {
+    height: auto;
+    width: 100%;
+    position: unset;
+    padding: 10px;
+  }
+
+  .createSurvey__right {
+    padding: 0 10px;
+    border-left: none;
+    position: unset;
+    width: 100%;
+    height: auto
+  }
+
+  .button__lightGreen {
+    width: 90%
+  }
+}
