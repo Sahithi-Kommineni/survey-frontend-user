@@ -150,7 +150,7 @@ export default {
         SurveyService.submitTakeResponse(apiData)
           .then((response) => {
             if (response.status === 200) {
-              // redirect to thankyou
+              this.$router.push({ name: "responseRecorded" });
             }
           })
           .catch((e) => {
