@@ -8,7 +8,7 @@ const routes = [
   },
   {
     name: 'responseRecorded',
-    path: '/response-recorded',
+    path: '/survey-frontend-survey/response-recorded',
     component: () => import('./views/ResponseRecorded/ResponseRecorded.vue'),
     props: true
   },
