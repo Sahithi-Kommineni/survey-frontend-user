@@ -44,17 +44,6 @@
                 :rules="[ques.required && rules.required]"
               ></v-text-field>
 
-              <v-textarea
-                v-if="ques.type === 'paragraph'"
-                :rules="[ques.required && rules.required]"
-                outlined
-                rows="3"
-                row-height="25"
-                name="input-7-4"
-                label="Enter Your Answer"
-                v-model="ques.response"
-              ></v-textarea>
-
               <!-- MULTIPLE CHOICE QUESTION-->
               <v-radio-group
                 v-model="ques.response"
@@ -146,7 +135,6 @@ export default {
           surveyId: this.surveyId,
           responses: surveyResponses,
         };
-        console.log("apiData???", apiData);
         SurveyService.submitTakeResponse(apiData)
           .then((response) => {
             if (response.status === 200) {
