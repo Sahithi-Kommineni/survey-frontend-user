@@ -4,7 +4,7 @@ class SurveyService {
     return http.get(`/opensurvey?surveyId=${id}`);
   }
   submitTakeResponse(surveyData) {
-    return http.post(`/survey/getresponse`, surveyData);
+    return http.post(`/getresponse`, surveyData);
   }
 }
 export default new SurveyService();
