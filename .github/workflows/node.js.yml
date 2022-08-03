@@ -26,4 +26,4 @@ jobs:
                     SOURCE: "dist/"
                     REMOTE_HOST: "ec2-18-206-127-116.compute-1.amazonaws.com"
                     REMOTE_USER: ubuntu
-                    TARGET: "/var/www/html/survey-frontend-user"
+                    TARGET: "/var/www/html/survey-frontend-survey"
